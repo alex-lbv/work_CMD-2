@@ -1,0 +1,126 @@
+.header {
+	position: relative;
+	color: #ffffff;
+	overflow: hidden;
+
+	@include screen(x) {
+		background: url('../img/pic/header_bg_mob.jpg') no-repeat, #8dbac0;
+		background-size: contain;
+		background-position: bottom;
+	}
+
+	@include screen(sm) {
+		background: url('../img/pic/header_bg.jpg') no-repeat, #99c1c6;
+		background-size: cover;
+		background-position: bottom;
+	}
+
+	@include screen(l) {
+		background: url('../img/pic/header_bg.jpg') no-repeat, #99c1c6;
+		background-size: cover;
+		background-position: bottom;
+	}
+
+	&__top {
+		position: relative;
+		z-index: 1;
+
+		@include screen (xl) {
+			padding: 15px 0;
+			margin-bottom: 30px;
+		}
+
+		@include screen (l) {
+			padding: 45px 0 0;
+			margin-bottom: 60px;
+		}
+
+		a {
+			color: #ffffff;
+			border-bottom: 1px solid transparent;
+			transition: border .3s;
+
+			&:hover:not(.header__logo) {
+				border-color: #ffffff;
+			}
+
+
+			@include screen(xl) {
+				margin-bottom: 20px;
+				text-transform: uppercase;
+				font: normal 16px/normal Manrope;
+			}
+
+			@include screen(l) {
+				font: normal 15px/normal Manrope;
+			}
+		}
+
+		img {
+			@include screen(xl) {
+				width: 190px;
+				height: 30px;
+			}
+		}
+	}
+
+	&__bottom {
+		position: relative;
+		z-index: 1;
+
+		@include screen(xl) {
+			padding: 0 0 340px;
+		}
+
+		@include screen(l) {
+			padding: 30px 0 100px 0;
+		}
+
+		br {
+			@include screen(xl) {
+				display: none;
+			}
+		}
+
+		h1 {
+			color: #ffffff;
+
+			@include screen(xl) {
+				margin-bottom: 40px;
+				font: 700 36px/48px Manrope;
+			}
+
+			@include screen(l) {
+				margin-bottom: 60px;
+				font: 700 80px/88px Manrope;
+			}
+
+			span {
+				color: #003594;
+			}
+		}
+
+		.btn {
+			padding: 19px 15px 20px;
+
+			color: #ffffff;
+			background-color: #003594;
+
+			@include screen(xl) {
+				max-width: 210px;
+			}
+
+			@include screen(l) {
+				max-width: 350px;
+			}
+
+			&:hover {
+				background-color: #00a9e0;
+			}
+
+			@include screen(xl) {
+				margin: auto;
+			}
+		}
+	}
+}

@@ -1,0 +1,55 @@
+.diagnostics {
+	border-bottom: 1px solid #dddddd;
+
+	@include screen(xl) {
+		padding: 40px 0;
+	}
+
+	@include screen(l) {
+		padding: 95px 0;
+	}
+
+	&__title {
+		color: #003594;
+
+		@include screen(xl) {
+			font: normal 20px/28px Manrope;
+		}
+
+		@include screen(l) {
+			font: normal 24px/32px Manrope;
+		}
+	}
+
+	&__subtitle {
+		font: normal 14px/28px Manrope;
+		color: #777777;
+	}
+
+	li {
+		&:not(:last-of-type) {
+			@include screen(xl) {
+				margin-bottom: 15px;
+			}
+
+			@include screen(l) {
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	.btn {
+		padding: 13px 15px 15px;
+		max-width: 270px;
+		color: #ffffff;
+		background-color: #00a9e0;
+
+		&:hover {
+			background-color: #003594;
+		}
+
+		@include screen(xl) {
+			margin: auto;
+		}
+	}
+}

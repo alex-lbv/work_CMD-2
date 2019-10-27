@@ -1,0 +1,456 @@
+.test {
+	@include screen(xl) {
+		padding: 40px 0;
+	}
+
+	@include screen(l) {
+		padding: 95px 0;
+	}
+
+	/* swiper */
+
+	&__container {
+		position: relative;
+		overflow: hidden;
+		padding-top: 30px;
+
+		.swiper-slide {
+			position: relative;
+
+			@include screen(xl) {
+				min-height: 400px;
+			}
+
+			@include screen(l) {
+				min-height: 300px;
+			}
+		}
+
+		.swiper-next {
+			padding: 0;
+			font: 400 18px/28px Manrope;
+			color: #00a9e0;
+		}
+
+		.swiper-pagination {
+			display: flex;
+			top: 0;
+			left: 0;
+			text-align: left;
+			width: 100%;
+			height: 2px;
+
+			&-bullet {
+				width: calc(100% / 5);
+				height: 2px;
+				border-radius: 0;
+				background-color: #455eaf;
+
+				&:not(:last-of-type) {
+					margin-right: 5px;
+				}
+
+				&-active {
+					background-color: #00a9e0;
+				}
+			}
+		}
+	}
+
+	.btn {
+		display: block;
+		padding: 9px 15px 10px;
+		width: 175px;
+		color: #00a9e0;
+		border: 1px solid #00a9e0;
+		background-color: #ffffff;
+		cursor: pointer;
+
+		&:hover {
+			color: #ffffff;
+			background-color: #00a9e0;
+		}
+
+		@include screen(xl) {
+			margin: auto;
+		}
+	}
+
+	input:checked+label {
+		color: #ffffff;
+		background-color: #00a9e0;
+	}
+
+	&__text {
+		margin-bottom: 30px;
+		font: normal 16px/24px Manrope;
+	}
+
+	&__title {
+		margin-bottom: 30px;
+		font: normal 24px/32px Manrope;
+	}
+
+	.test__question {
+		span {
+			color: #f8485e;
+		}
+	}
+
+	.test__answer {
+		&--1-true {
+			position: absolute;
+			top: 0;
+			opacity: 0;
+			pointer-events: none;
+			background: #ffffff;
+
+			&.active {
+				opacity: 1;
+				pointer-events: auto;
+
+				&+.test__question--1 {
+					opacity: 0;
+					pointer-events: none;
+				}
+			}
+
+			span {
+				display: inline-block;
+				color: #00b388;
+			}
+		}
+
+		&--1-false {
+			position: absolute;
+			top: 0;
+			opacity: 0;
+			pointer-events: none;
+			background: #ffffff;
+
+			&.active {
+				opacity: 1;
+				pointer-events: auto;
+
+				&+.test__question--1 {
+					opacity: 0;
+					pointer-events: none;
+				}
+			}
+
+			span {
+				display: inline-block;
+				color: #f8485e;
+			}
+		}
+
+		&--2-true {
+			position: absolute;
+			top: 0;
+			opacity: 0;
+			pointer-events: none;
+			background: #ffffff;
+
+			&.active {
+				opacity: 1;
+				pointer-events: auto;
+
+				&+.test__question--1 {
+					opacity: 0;
+					pointer-events: none;
+				}
+			}
+
+			span {
+				display: inline-block;
+				color: #00b388;
+			}
+		}
+
+		&--2-false {
+			position: absolute;
+			top: 0;
+			opacity: 0;
+			pointer-events: none;
+			background: #ffffff;
+
+			&.active {
+				opacity: 1;
+				pointer-events: auto;
+
+				&+.test__question--1 {
+					opacity: 0;
+					pointer-events: none;
+				}
+			}
+
+			span {
+				display: inline-block;
+				color: #f8485e;
+			}
+		}
+
+		&--2-true {
+			position: absolute;
+			top: 0;
+			opacity: 0;
+			pointer-events: none;
+			background: #ffffff;
+
+			&.active {
+				opacity: 1;
+				pointer-events: auto;
+
+				&+.test__question--1 {
+					opacity: 0;
+					pointer-events: none;
+				}
+			}
+
+			span {
+				display: inline-block;
+				color: #00b388;
+			}
+		}
+
+		&--2-false {
+			position: absolute;
+			top: 0;
+			opacity: 0;
+			pointer-events: none;
+			background: #ffffff;
+
+			&.active {
+				opacity: 1;
+				pointer-events: auto;
+
+				&+.test__question--1 {
+					opacity: 0;
+					pointer-events: none;
+				}
+			}
+
+			span {
+				display: inline-block;
+				color: #f8485e;
+			}
+		}
+
+		&--3-true {
+			position: absolute;
+			top: 0;
+			opacity: 0;
+			pointer-events: none;
+			background: #ffffff;
+
+			&.active {
+				opacity: 1;
+				pointer-events: auto;
+
+				&+.test__question--1 {
+					opacity: 0;
+					pointer-events: none;
+				}
+			}
+
+			span {
+				display: inline-block;
+				color: #00b388;
+			}
+		}
+
+		&--3-false {
+			position: absolute;
+			top: 0;
+			opacity: 0;
+			pointer-events: none;
+			background: #ffffff;
+
+			&.active {
+				opacity: 1;
+				pointer-events: auto;
+
+				&+.test__question--1 {
+					opacity: 0;
+					pointer-events: none;
+				}
+			}
+
+			span {
+				display: inline-block;
+				color: #f8485e;
+			}
+		}
+
+		&--4-true {
+			position: absolute;
+			top: 0;
+			opacity: 0;
+			pointer-events: none;
+			background: #ffffff;
+
+			&.active {
+				opacity: 1;
+				pointer-events: auto;
+
+				&+.test__question--1 {
+					opacity: 0;
+					pointer-events: none;
+				}
+			}
+
+			span {
+				display: inline-block;
+				color: #00b388;
+			}
+		}
+
+		&--4-false {
+			position: absolute;
+			top: 0;
+			opacity: 0;
+			pointer-events: none;
+			background: #ffffff;
+
+			&.active {
+				opacity: 1;
+				pointer-events: auto;
+
+				&+.test__question--1 {
+					opacity: 0;
+					pointer-events: none;
+				}
+			}
+
+			span {
+				display: inline-block;
+				color: #f8485e;
+			}
+		}
+
+		&--5-true {
+			position: absolute;
+			top: 0;
+			opacity: 0;
+			pointer-events: none;
+			background: #ffffff;
+
+			&.active {
+				opacity: 1;
+				pointer-events: auto;
+
+				&+.test__question--1 {
+					opacity: 0;
+					pointer-events: none;
+				}
+			}
+
+			span {
+				display: inline-block;
+				color: #00b388;
+			}
+		}
+
+		&--5-false {
+			position: absolute;
+			top: 0;
+			opacity: 0;
+			pointer-events: none;
+			background: #ffffff;
+
+			&.active {
+				opacity: 1;
+				pointer-events: auto;
+
+				&+.test__question--1 {
+					opacity: 0;
+					pointer-events: none;
+				}
+			}
+
+			span {
+				display: inline-block;
+				color: #f8485e;
+			}
+		}
+	}
+
+	&__result {
+		@include screen(xl) {
+			margin-top: 30px;
+		}
+
+		&-footer {
+			margin-top: 30px;
+			padding-top: 30px;
+			border-top: 1px solid #cce0e6;
+
+			span {
+				margin-right: 20px;
+				display: inline-block;
+			}
+
+			li {
+				&:not(:last-of-type) {
+					margin-right: 15px;
+				}
+			}
+
+			img {
+				width: 24px;
+				height: 24px;
+			}
+		}
+
+		&-link {
+			color: #00a9e0;
+			border-bottom: 1px solid transparent;
+			transition: border .3s;
+
+			&:hover {
+				border-color: #00a9e0;
+			}
+		}
+
+		&-number {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			width: 115px;
+			height: 115px;
+			color: #ffffff;
+			border-radius: 0 0 40px 0;
+
+			@include screen(xl) {
+				margin: 0 auto 35px;
+			}
+
+			span {
+				display: block;
+
+				&:first-of-type {
+					font: 700 60px/60px Manrope;
+				}
+			}
+		}
+
+		&--1 {
+			.test__result-number {
+				background-color: #00b388;
+			}
+		}
+
+		&--2 {
+			.test__result-number {
+				background-color: #00a9e0;
+			}
+		}
+
+		&--3 {
+			.test__result-number {
+				background-color: #f8485e;
+			}
+		}
+	}
+}

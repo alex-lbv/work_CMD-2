@@ -1,0 +1,51 @@
+.prevention {
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+
+	@include screen(xl) {
+		padding: 40px 0;
+	}
+
+	@include screen(l) {
+		padding: 95px 0;
+	}
+
+	h3 {
+		font: 700 22px/normal Manrope;
+	}
+
+	&__list {
+		li {
+			position: relative;
+			padding-left: 25px;
+
+			&:not(:last-of-type) {
+				margin-bottom: 30px;
+			}
+		}
+
+		&--plus {
+			li::before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 5px;
+				width: 16px;
+				height: 16px;
+				background: url("../img/pic/ico/check_green.svg") no-repeat;
+			}
+		}
+
+		&--minus {
+			li::before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 5px;
+				width: 16px;
+				height: 16px;
+				background: url("../img/pic/ico/check_red.svg") no-repeat;
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+.treatment {
+	border-bottom: 1px solid #dddddd;
+
+	@include screen(xl) {
+		padding: 40px 0;
+	}
+
+	@include screen(l) {
+		padding: 95px 0;
+	}
+}

@@ -1,0 +1,22 @@
+.geo {
+	@include screen(xl) {
+		padding: 40px 0;
+	}
+
+	@include screen(l) {
+		padding: 95px 0;
+	}
+
+	.subtitle {
+		margin-bottom: 60px;
+		text-align: center;
+	}
+
+	iframe {
+		width: 100%;
+
+		@include screen(xl) {
+			height: 615px;
+		}
+	}
+}

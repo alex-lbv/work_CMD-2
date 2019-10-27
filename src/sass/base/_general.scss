@@ -1,0 +1,71 @@
+*,
+::before,
+::after {
+  box-sizing: border-box !important;
+  outline: none;
+}
+
+body {
+  position: relative;
+  color: #000000;
+  background-color: #ffffff;
+  overflow-x: hidden;
+
+  @include screen(xl) {
+    font: normal 16px/24px Manrope;
+  }
+
+  @include screen(l) {
+    font: normal 18px/28px Manrope;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+
+  @include screen(xl) {
+    margin: auto;
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  @include screen(l) {
+    max-width: 440px;
+    max-height: 440px;
+  }
+
+  &--border-left {
+    border-radius: 0 0 0 40px;
+  }
+
+  &--border-right {
+    border-radius: 0 0 40px 0;
+  }
+}
+
+.subtitle {
+  color: #000000;
+
+  @include screen(xl) {
+    font: 700 28px/32px Manrope;
+  }
+
+  @include screen(l) {
+    font: 700 36px/40px Manrope;
+  }
+}

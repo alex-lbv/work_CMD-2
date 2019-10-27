@@ -1,0 +1,434 @@
+//= components/head.html
+
+<body>
+  <header class="header">
+    <div class="uk-container">
+      <div class="header__top uk-flex uk-flex-between uk-flex-middle@l uk-flex-column@s">
+        <div>
+          <a href="#" class="header__logo">
+            <img src="img/pic/logo/cmd-logo.svg" width="245" height="42" alt="">
+          </a>
+        </div>
+
+        <ul class="uk-flex uk-flex-around uk-width-1-2 uk-visible@l">
+          <li>
+            <a href="#test" uk-scroll>Проверка готовности</a>
+          </li>
+          <li>
+            <a href="#prevention" uk-scroll>Профилактика</a>
+          </li>
+          <li>
+            <a href="#treatment" uk-scroll>Лечение</a>
+          </li>
+          <li>
+            <a href="#diagnostics" uk-scroll>Диагностика</a>
+          </li>
+        </ul>
+
+        <div>
+          <a class="header__contact" href="tel:88007077881">8 800 707 7881</a>
+        </div>
+      </div>
+
+      <div class="header__bottom uk-flex uk-flex-column">
+        <h1><span>А Вы готовы</span><br>к сезону <br>простуды <br>и гриппа?</h1>
+        <a class="btn" href="#test" uk-scroll>Проверить</a>
+      </div>
+    </div>
+  </header>
+  <main>
+
+    <div id="test" class="test">
+      <div class="uk-container">
+        <div class="uk-flex uk-flex-column@s uk-child-width-1-2@l">
+          <div class="uk-padding-large-right@l">
+            <h2 class="subtitle uk-margin-medium-bottom">Тест на готовность к сезону гриппа и ОРВИ</h2>
+            <p>Наступили холода, а значит, повышаются риски заболеть простудой и гриппом. Но даже в осенне-зимний период
+              хочется сохранить хорошее настроение, а главное – здоровье! Давайте проверим, готовы ли Вы дать отпор
+              опасным вирусам!</p>
+          </div>
+
+          <div class="test__swiper uk-padding-large-left@l">
+            <p class="test__text">Выберите, согласны Вы или нет с предложенным утверждением.</p>
+            <!-- Swiper -->
+            <div class="test__container">
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <div class="swiper-wrapper">
+                <!-- Slide-1 -->
+                <div class="swiper-slide">
+                  <!-- true -->
+                  <div class="test__answer test__answer--1-true">
+                    <p class="test__title">Грипп опасен только для детей, пожилых людей и беременных женщин.</p>
+                    <span class="uk-margin-small-bottom">Правильно</span>
+                    <p class="uk-margin-bottom">Для гриппа и ОРВИ характерна осенне-зимне-весенняя сезонность. Эпидемии
+                      гриппа наблюдаются преимущественно зимой.</p>
+                    <button class="swiper-next">Продолжить тест</button>
+                  </div>
+                  <!-- false -->
+                  <div class="test__answer test__answer--1-false">
+                    <p class="test__title">Грипп опасен только для детей, пожилых людей и беременных женщин.</p>
+                    <span class="uk-margin-small-bottom">Не правильно</span>
+                    <p class="uk-margin-bottom">К сожалению, вирус гриппа опасен для всех. Однако, у
+                      перечисленной группы повышен риск тяжелого
+                      течения болезни и им стоит особенно серьезно подойти к профилактическим мероприятиям.</p>
+                    <button class="swiper-next">Продолжить тест</button>
+                  </div>
+                  <div class="test__question test__question--1">
+                    <p class="test__title">Грипп опасен только для детей, пожилых людей и беременных женщин.</p>
+                    <div class="uk-flex">
+                      <input class="uk-hidden" type="radio" id="q1-1" name="q1">
+                      <label class="btn uk-margin-medium-right" for="q1-1"
+                        uk-toggle="target: .test__answer--1-false; cls: active">Да</label>
+                      <input class="uk-hidden" type="radio" id="q1-2" name="q1">
+                      <label class="btn" for="q1-2" uk-toggle="target: .test__answer--1-true; cls: active">Нет</label>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide-2 -->
+                <div class="swiper-slide">
+                  <!-- true -->
+                  <div class="test__answer test__answer--2-true">
+                    <p class="test__title">Грипп опасен только для детей, пожилых людей и беременных женщин.</p>
+                    <span class="uk-margin-small-bottom">Правильно</span>
+                    <p class="uk-margin-bottom">Для гриппа и ОРВИ характерна осенне-зимне-весенняя сезонность. Эпидемии
+                      гриппа наблюдаются преимущественно зимой.</p>
+                    <button class="swiper-next">Продолжить тест</button>
+                  </div>
+                  <!-- false -->
+                  <div class="test__answer test__answer--2-false">
+                    <p class="test__title">Грипп опасен только для детей, пожилых людей и беременных женщин.</p>
+                    <span class="uk-margin-small-bottom">Не правильно</span>
+                    <p class="uk-margin-bottom">К сожалению, вирус гриппа опасен для всех. Однако, у
+                      перечисленной группы повышен риск тяжелого
+                      течения болезни и им стоит особенно серьезно подойти к профилактическим мероприятиям.</p>
+                    <button class="swiper-next">Продолжить тест</button>
+                  </div>
+                  <div class="test__question test__question--2">
+                    <p class="test__title">Грипп опасен только для детей, пожилых людей и беременных женщин.</p>
+                    <div class="uk-flex">
+                      <input class="uk-hidden" type="radio" id="q2-1" name="q2">
+                      <label class="btn uk-margin-medium-right" for="q2-1"
+                        uk-toggle="target: .test__answer--2-false; cls: active">Да</label>
+                      <input class="uk-hidden" type="radio" id="q2-2" name="q2">
+                      <label class="btn" for="q2-2" uk-toggle="target: .test__answer--2-true; cls: active">Нет</label>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide-3 -->
+                <div class="swiper-slide">
+                  <!-- true -->
+                  <div class="test__answer test__answer--3-true">
+                    <p class="test__title">Грипп опасен только для детей, пожилых людей и беременных женщин.</p>
+                    <span class="uk-margin-small-bottom">Правильно</span>
+                    <p class="uk-margin-bottom">Для гриппа и ОРВИ характерна осенне-зимне-весенняя сезонность. Эпидемии
+                      гриппа наблюдаются преимущественно зимой.</p>
+                    <button class="swiper-next">Продолжить тест</button>
+                  </div>
+                  <!-- false -->
+                  <div class="test__answer test__answer--3-false">
+                    <p class="test__title">Грипп опасен только для детей, пожилых людей и беременных женщин.</p>
+                    <span class="uk-margin-small-bottom">Не правильно</span>
+                    <p class="uk-margin-bottom">К сожалению, вирус гриппа опасен для всех. Однако, у
+                      перечисленной группы повышен риск тяжелого
+                      течения болезни и им стоит особенно серьезно подойти к профилактическим мероприятиям.</p>
+                    <button class="swiper-next">Продолжить тест</button>
+                  </div>
+                  <div class="test__question test__question--3">
+                    <p class="test__title">Грипп опасен только для детей, пожилых людей и беременных женщин.</p>
+                    <div class="uk-flex">
+                      <input class="uk-hidden" type="radio" id="q3-1" name="q3">
+                      <label class="btn uk-margin-medium-right" for="q3-1"
+                        uk-toggle="target: .test__answer--3-false; cls: active">Да</label>
+                      <input class="uk-hidden" type="radio" id="q3-2" name="q3">
+                      <label class="btn" for="q3-2" uk-toggle="target: .test__answer--3-true; cls: active">Нет</label>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide-4 -->
+                <div class="swiper-slide">
+                  <!-- true -->
+                  <div class="test__answer test__answer--4-true">
+                    <p class="test__title">Грипп опасен только для детей, пожилых людей и беременных женщин.</p>
+                    <span class="uk-margin-small-bottom">Правильно</span>
+                    <p class="uk-margin-bottom">Для гриппа и ОРВИ характерна осенне-зимне-весенняя сезонность. Эпидемии
+                      гриппа наблюдаются преимущественно зимой.</p>
+                    <button class="swiper-next">Продолжить тест</button>
+                  </div>
+                  <!-- false -->
+                  <div class="test__answer test__answer--4-false">
+                    <p class="test__title">Грипп опасен только для детей, пожилых людей и беременных женщин.</p>
+                    <span class="uk-margin-small-bottom">Не правильно</span>
+                    <p class="uk-margin-bottom">К сожалению, вирус гриппа опасен для всех. Однако, у
+                      перечисленной группы повышен риск тяжелого
+                      течения болезни и им стоит особенно серьезно подойти к профилактическим мероприятиям.</p>
+                    <button class="swiper-next">Продолжить тест</button>
+                  </div>
+                  <div class="test__question test__question--2">
+                    <p class="test__title">Грипп опасен только для детей, пожилых людей и беременных женщин.</p>
+                    <div class="uk-flex">
+                      <input class="uk-hidden" type="radio" id="q4-1" name="q4">
+                      <label class="btn uk-margin-medium-right" for="q4-1"
+                        uk-toggle="target: .test__answer--4-false; cls: active">Да</label>
+                      <input class="uk-hidden" type="radio" id="q4-2" name="q4">
+                      <label class="btn" for="q4-2" uk-toggle="target: .test__answer--4-true; cls: active">Нет</label>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide-5 -->
+                <div class="swiper-slide">
+                  <!-- true -->
+                  <div class="test__answer test__answer--5-true">
+                    <p class="test__title">Грипп опасен только для детей, пожилых людей и беременных женщин.</p>
+                    <span class="uk-margin-small-bottom">Правильно</span>
+                    <p class="uk-margin-bottom">Для гриппа и ОРВИ характерна осенне-зимне-весенняя сезонность. Эпидемии
+                      гриппа наблюдаются преимущественно зимой.</p>
+                    <button class="swiper-next">Продолжить тест</button>
+                  </div>
+                  <!-- false -->
+                  <div class="test__answer test__answer--5-false">
+                    <p class="test__title">Грипп опасен только для детей, пожилых людей и беременных женщин.</p>
+                    <span class="uk-margin-small-bottom">Не правильно</span>
+                    <p class="uk-margin-bottom">К сожалению, вирус гриппа опасен для всех. Однако, у
+                      перечисленной группы повышен риск тяжелого
+                      течения болезни и им стоит особенно серьезно подойти к профилактическим мероприятиям.</p>
+                    <button class="swiper-next">Продолжить тест</button>
+                  </div>
+                  <div class="test__question test__question--2">
+                    <p class="test__title">Грипп опасен только для детей, пожилых людей и беременных женщин.</p>
+                    <div class="uk-flex">
+                      <input class="uk-hidden" type="radio" id="q5-1" name="q5">
+                      <label class="btn uk-margin-medium-right" for="q5-1"
+                        uk-toggle="target: .test__answer--5-false; cls: active">Да</label>
+                      <input class="uk-hidden" type="radio" id="q5-2" name="q5">
+                      <label class="btn" for="q5-2" uk-toggle="target: .test__answer--5-true; cls: active">Нет</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Results -->
+          <div class="uk-padding-large-left@l uk-hidden">
+            <!-- <div class="test__result test__result--1 uk-fkex uk-flex-column">
+              <div class="uk-flex uk-flex-column@s">
+                <div class="test__result-number uk-margin-right@l">
+                  <span>5</span>
+                  <span>баллов</span>
+                </div>
+                <div class="uk-width-expand">
+                  <p class="uk-margin-bottom">Вот это да! Вы отлично подготовились и точно знаете, как защитить себя от
+                    болезни. Теперь пора узнать о методах выявления возбудителей ОРВИ.</p>
+                  <a class="test__result-link" href="#">Узнать больше</a>
+                </div>
+              </div>
+
+              <div class="test__result-footer uk-flex uk-flex-column@s">
+                <span>Поделитесь результатом в соцсетях!</span>
+                <ul class="uk-flex uk-margin-top@s">
+                  <li>
+                    <a href="#">
+                      <img src="img/pic/logo/vk-logo.svg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/pic/logo/ok-logo.svg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/pic/logo/facebook-logo.svg" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div> -->
+
+            <!-- <div class="test__result test__result--2 uk-fkex uk-flex-column">
+              <div class="uk-flex uk-flex-column@s">
+                <div class="test__result-number uk-margin-right@l">
+                  <span>3</span>
+                  <span>балла</span>
+                </div>
+                <div class="uk-width-expand">
+                  <p class="uk-margin-bottom"> Поздравляем! Вы неплохо осведомлены
+                    о гриппе и ОРВИ, но Вам стоит подробнее узнать о разнице в лечении этих заболеваний.</p>
+                  <a class="test__result-link" href="#">Узнать больше</a>
+                </div>
+              </div>
+
+              <div class="test__result-footer uk-flex uk-flex-column@s">
+                <span>Поделитесь результатом в соцсетях!</span>
+                <ul class="uk-flex uk-margin-top@s">
+                  <li>
+                    <a href="#">
+                      <img src="img/pic/logo/vk-logo.svg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/pic/logo/ok-logo.svg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/pic/logo/facebook-logo.svg" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div> -->
+
+            <!-- <div class="test__result test__result--3 uk-fkex uk-flex-column">
+              <div class="uk-flex uk-flex-column@s">
+                <div class="test__result-number uk-margin-right@l">
+                  <span>1</span>
+                  <span>балл</span>
+                </div>
+                <div class="uk-width-expand">
+                  <p class="uk-margin-bottom">Внимание! Вы в зоне риска! Чтобы
+                    не заболеть в этом сезоне и не заразить своих близких, Вам необходимо узнать
+                    о способах защиты от вирусов.</p>
+                  <a class="test__result-link" href="#">Узнайте, как защитить себя</a>
+                </div>
+              </div>
+
+              <div class="test__result-footer uk-flex uk-flex-column@s">
+                <span>Поделитесь результатом в соцсетях!</span>
+                <ul class="uk-flex uk-margin-top@s">
+                  <li>
+                    <a href="#">
+                      <img src="img/pic/logo/vk-logo.svg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/pic/logo/ok-logo.svg" alt="">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="img/pic/logo/facebook-logo.svg" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="prevention" class="prevention">
+      <div class="uk-container">
+        <div class="uk-flex uk-flex-column@s uk-margin-large-bottom">
+          <div class="uk-margin-large-right@l uk-margin-bottom@s">
+            <h2 class="subtitle uk-margin-medium-bottom">Профилактика гриппа и ОРВИ</h2>
+            <ul class="prevention__list prevention__list--plus">
+              <li>Укрепляйте иммунитет, придерживайтесь здорового образа жизни: правильно питайтесь, съедайте не менее 5
+                порций свежих овощей и фруктов в день, употребляйте достаточное количество воды, соблюдайте режим дня,
+                давайте телу физические нагрузки, закаляйтесь.</li>
+              <li>Соблюдайте правила личной гигиены, чаще мойте руки с мылом и используйте дезинфицирующие салфетки.
+              </li>
+              <li>Проветривайте помещения, проводите влажную уборку.</li>
+              <li>Гуляйте на свежем воздухе не менее 1 часа в день.</li>
+              <li>Избегайте общения с людьми, у которых есть признаки заболевания.</li>
+              <li>При контакте с больными членами семьи пользуйтесь маской.</li>
+              <li>В период эпидемии гриппа и ОРВИ старайтесь не посещать места массового скопления людей.</li>
+            </ul>
+          </div>
+
+          <img class="image image--border-left" src="img/pic/img_01.jpg" width="440" height="440" alt="">
+        </div>
+
+        <div class="uk-flex uk-flex-column@s">
+          <img class="image image--border-right uk-visible@l" src="img/pic/img_02.jpg" width="440" height="440" alt="">
+          <div class="uk-margin-large-left@l">
+            <h3 class="uk-margin-bottom">Вакцинопрофилактика</h3>
+            <p class="uk-margin-bottom">Это наиболее эффективный метод профилактики, которую рекомендуется проводить с
+              середины октября до
+              середины ноября.</p>
+            <p class="uk-margin-bottom">В этом году будут циркулировать следующие типы вирусов:</p>
+            <ul class="prevention__list prevention__list--minus uk-margin-bottom">
+              <li>вирус подобный гриппу A/Брисбен/02/2018 (H1N1) pdm09;</li>
+              <li>A/Канзас/14/2017-подобный грипп (H3N2);</li>
+              <li>B/Колорадо/06/2017-подобный грипп (линия B/Виктория/2/87);</li>
+              <li>B/Пхукет /3073/2013-подобный грипп (линия B/Ямагата /16/88).</li>
+            </ul>
+            <p>Именно эти штаммы включены в вакцину эпидемиологического сезона 2019 - 2020 гг.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="treatment" class="treatment">
+      <div class="uk-container">
+        <div class="uk-flex uk-flex-column@s">
+          <div class="uk-margin-large-right@l uk-margin-medium-bottom@s">
+            <h2 class="subtitle uk-margin-medium-bottom">Лечение гриппа и ОРВИ</h2>
+            <p class="uk-margin-bottom">Многие считают грипп и ОРВИ неопасными заболеваниями и переносят болезнь "на
+              ногах", занимаясь самолечением. Это может привести к развитию осложнений со стороны сердечно-сосудистой
+              системы, ЛОР-органов (синуситы, отиты) и нижних дыхательных путей (пневмонии, бронхиты).</p>
+            <p class="uk-margin-bottom">При появлении первых симптомов заболевания следует немедленно обратиться к
+              врачу!</p>
+            <p>Выбор лечения зависит от поставленного диагноза. Поэтому очень важно правильно определить вид возбудителя
+              инфекции. Ниже мы расскажем Вам об исследовании, необходимом для диагностики гриппа и ОРВИ.</p>
+          </div>
+
+          <img class="image image--border-left" src="img/pic/img_03.jpg" width="440" height="440" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div id="diagnostics" class="diagnostics">
+      <div class="uk-container">
+        <div class="uk-flex uk-flex-beetween uk-flex-column@s uk-child-width-1-2@l">
+          <div class="uk-padding-large-right@l">
+            <h2 class="subtitle uk-margin-medium-bottom@l">Лечение гриппа и ОРВИ</h2>
+            <p class="uk-margin-bottom">Симптомы ОРВИ и гриппа очень похожи, и только лабораторная диагностика позволит
+              установить вид возбудителя, а значит правильно поставить диагноз и назначить адекватное лечение.</p>
+            <p class="uk-margin-bottom"><b>Это важно, поскольку лечение гриппа существенно отличается от лечения других
+                ОРВИ.</b></p>
+            <p class="uk-margin-bottom">Центр молекулярной диагностики (CMD) Центрального НИИ эпидемиологии
+              Роспотребнадзора предлагает комплексное исследование, которое позволит в кратчайшие сроки выявить вирусы
+              гриппа А, включая штаммы «свиного» и «гонконгского» гриппа, гриппа В и возбудителей распространенных ОРВИ.
+            </p>
+          </div>
+          <div class="uk-padding-large-left@l">
+            <p class="diagnostics__title uk-margin-bottom">Диагностика вирусных инфекций дыхательных путей (грипп и
+              ОРВИ)</p>
+            <ul class="uk-margin-medium-bottom">
+              <li class="uk-flex uk-flex-column">
+                <span class="diagnostics__subtitle">Код исследования:</span>
+                <span><b>032404</b></span>
+              </li>
+              <li class="uk-flex uk-flex-column">
+                <span class="diagnostics__subtitle">Срок выполнения:</span>
+                <p><b>1 - 2 календарных дня</b> <br>(не включает день взятия биоматериала)</p>
+              </li>
+              <li class="uk-flex uk-flex-column">
+                <span class="diagnostics__subtitle">Биоматериал:</span>
+                <p>Для проведения анализа необходимо сдать мазок <br>из носоглотки и ротоглотки</p>
+              </li>
+            </ul>
+            <button class="btn" type="button">Заказать</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="geo" class="geo">
+      <div class="uk-container">
+        <h3 class="subtitle subtitle--pink">Где пройти обследование</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d53787.65773638526!2d30.337858222679674!3d59.93387135736224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1562672617310!5m2!1sru!2sru"
+          width="1170" height="600" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </main>
+
+  //= components/footer.html
+</body>
+//= components/bottom.html
