@@ -16,14 +16,6 @@
 
 		.swiper-slide {
 			position: relative;
-
-			@include screen(xl) {
-				min-height: 555px;
-			}
-
-			@include screen(l) {
-				min-height: 450px;
-			}
 		}
 
 		.swiper-next {
@@ -104,284 +96,6 @@
 		}
 	}
 
-	.test__answer {
-		&--1-true {
-			position: absolute;
-			top: 0;
-			opacity: 0;
-			pointer-events: none;
-			background: #ffffff;
-
-			&.active {
-				opacity: 1;
-				pointer-events: auto;
-
-				&+.test__question--1 {
-					opacity: 0;
-					pointer-events: none;
-				}
-			}
-
-			span {
-				display: inline-block;
-				color: #00b388;
-			}
-		}
-
-		&--1-false {
-			position: absolute;
-			top: 0;
-			opacity: 0;
-			pointer-events: none;
-			background: #ffffff;
-
-			&.active {
-				opacity: 1;
-				pointer-events: auto;
-
-				&+.test__question--1 {
-					opacity: 0;
-					pointer-events: none;
-				}
-			}
-
-			span {
-				display: inline-block;
-				color: #f8485e;
-			}
-		}
-
-		&--2-true {
-			position: absolute;
-			top: 0;
-			opacity: 0;
-			pointer-events: none;
-			background: #ffffff;
-
-			&.active {
-				opacity: 1;
-				pointer-events: auto;
-
-				&+.test__question--1 {
-					opacity: 0;
-					pointer-events: none;
-				}
-			}
-
-			span {
-				display: inline-block;
-				color: #00b388;
-			}
-		}
-
-		&--2-false {
-			position: absolute;
-			top: 0;
-			opacity: 0;
-			pointer-events: none;
-			background: #ffffff;
-
-			&.active {
-				opacity: 1;
-				pointer-events: auto;
-
-				&+.test__question--1 {
-					opacity: 0;
-					pointer-events: none;
-				}
-			}
-
-			span {
-				display: inline-block;
-				color: #f8485e;
-			}
-		}
-
-		&--2-true {
-			position: absolute;
-			top: 0;
-			opacity: 0;
-			pointer-events: none;
-			background: #ffffff;
-
-			&.active {
-				opacity: 1;
-				pointer-events: auto;
-
-				&+.test__question--1 {
-					opacity: 0;
-					pointer-events: none;
-				}
-			}
-
-			span {
-				display: inline-block;
-				color: #00b388;
-			}
-		}
-
-		&--2-false {
-			position: absolute;
-			top: 0;
-			opacity: 0;
-			pointer-events: none;
-			background: #ffffff;
-
-			&.active {
-				opacity: 1;
-				pointer-events: auto;
-
-				&+.test__question--1 {
-					opacity: 0;
-					pointer-events: none;
-				}
-			}
-
-			span {
-				display: inline-block;
-				color: #f8485e;
-			}
-		}
-
-		&--3-true {
-			position: absolute;
-			top: 0;
-			opacity: 0;
-			pointer-events: none;
-			background: #ffffff;
-
-			&.active {
-				opacity: 1;
-				pointer-events: auto;
-
-				&+.test__question--1 {
-					opacity: 0;
-					pointer-events: none;
-				}
-			}
-
-			span {
-				display: inline-block;
-				color: #00b388;
-			}
-		}
-
-		&--3-false {
-			position: absolute;
-			top: 0;
-			opacity: 0;
-			pointer-events: none;
-			background: #ffffff;
-
-			&.active {
-				opacity: 1;
-				pointer-events: auto;
-
-				&+.test__question--1 {
-					opacity: 0;
-					pointer-events: none;
-				}
-			}
-
-			span {
-				display: inline-block;
-				color: #f8485e;
-			}
-		}
-
-		&--4-true {
-			position: absolute;
-			top: 0;
-			opacity: 0;
-			pointer-events: none;
-			background: #ffffff;
-
-			&.active {
-				opacity: 1;
-				pointer-events: auto;
-
-				&+.test__question--1 {
-					opacity: 0;
-					pointer-events: none;
-				}
-			}
-
-			span {
-				display: inline-block;
-				color: #00b388;
-			}
-		}
-
-		&--4-false {
-			position: absolute;
-			top: 0;
-			opacity: 0;
-			pointer-events: none;
-			background: #ffffff;
-
-			&.active {
-				opacity: 1;
-				pointer-events: auto;
-
-				&+.test__question--1 {
-					opacity: 0;
-					pointer-events: none;
-				}
-			}
-
-			span {
-				display: inline-block;
-				color: #f8485e;
-			}
-		}
-
-		&--5-true {
-			position: absolute;
-			top: 0;
-			opacity: 0;
-			pointer-events: none;
-			background: #ffffff;
-
-			&.active {
-				opacity: 1;
-				pointer-events: auto;
-
-				&+.test__question--1 {
-					opacity: 0;
-					pointer-events: none;
-				}
-			}
-
-			span {
-				display: inline-block;
-				color: #00b388;
-			}
-		}
-
-		&--5-false {
-			position: absolute;
-			top: 0;
-			opacity: 0;
-			pointer-events: none;
-			background: #ffffff;
-
-			&.active {
-				opacity: 1;
-				pointer-events: auto;
-
-				&+.test__question--1 {
-					opacity: 0;
-					pointer-events: none;
-				}
-			}
-
-			span {
-				display: inline-block;
-				color: #f8485e;
-			}
-		}
-	}
-
 	&__result {
 		@include screen(xl) {
 			margin-top: 30px;
@@ -459,5 +173,30 @@
 				background-color: #f8485e;
 			}
 		}
+	}
+
+	.answered .test__question,
+	.test__answer--false,
+	.test__answer--true {
+		display: none;
+	}
+
+	.answer-false .test__answer--false {
+		display: block;
+
+		span {
+			display: inline-block;
+			color: #f8485e;
+		}
+	}
+
+	.answer-true .test__answer--true {
+		display: block;
+
+		span {
+			display: inline-block;
+			color: #00b388;
+		}
+
 	}
 }

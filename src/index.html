@@ -57,165 +57,183 @@
               <div class="swiper-wrapper">
                 <!-- Slide-1 -->
                 <div class="swiper-slide">
-                  <!-- true -->
-                  <div class="test__answer test__answer--1-true">
-                    <p class="test__title">Грипп опасен только для детей, пожилых людей и беременных женщин.</p>
-                    <span class="uk-margin-small-bottom">Правильно</span>
-                    <p class="uk-margin-bottom">Для гриппа и ОРВИ характерна осенне-зимне-весенняя сезонность. Эпидемии
-                      гриппа наблюдаются преимущественно зимой.</p>
-                    <button class="swiper-next">Продолжить тест</button>
-                  </div>
-                  <!-- false -->
-                  <div class="test__answer test__answer--1-false">
-                    <p class="test__title">Грипп опасен только для детей, пожилых людей и беременных женщин.</p>
-                    <span class="uk-margin-small-bottom">Не правильно</span>
-                    <p class="uk-margin-bottom">К сожалению, вирус гриппа опасен для всех. Однако, у
-                      перечисленной группы повышен риск тяжелого
-                      течения болезни и им стоит особенно серьезно подойти к профилактическим мероприятиям.</p>
-                    <button class="swiper-next">Продолжить тест</button>
-                  </div>
-                  <div class="test__question test__question--1">
-                    <p class="test__title">Грипп опасен только для детей, пожилых людей и беременных женщин.</p>
-                    <div class="uk-flex">
-                      <input class="uk-hidden" type="radio" id="q1-1" name="q1">
-                      <label class="btn uk-margin-medium-right" for="q1-1"
-                        uk-toggle="target: .test__answer--1-false; cls: active" onclick="decrementPoints()">Да</label>
-                      <input class="uk-hidden" type="radio" id="q1-2" name="q1">
-                      <label class="btn" for="q1-2" uk-toggle="target: .test__answer--1-true; cls: active">Нет</label>
+                  <div class="test1">
+                    <!-- true -->
+                    <div class="test__answer test__answer--true">
+                      <p class="test__title">Грипп опасен только для детей, пожилых людей и беременных женщин.</p>
+                      <span class="uk-margin-small-bottom">Правильно</span>
+                      <p class="uk-margin-bottom">Для гриппа и ОРВИ характерна осенне-зимне-весенняя сезонность.
+                        Эпидемии
+                        гриппа наблюдаются преимущественно зимой.</p>
+                      <button class="swiper-next">Продолжить тест</button>
+                    </div>
+                    <!-- false -->
+                    <div class="test__answer test__answer--false">
+                      <p class="test__title">Грипп опасен только для детей, пожилых людей и беременных женщин.</p>
+                      <span class="uk-margin-small-bottom">Не правильно</span>
+                      <p class="uk-margin-bottom">К сожалению, вирус гриппа опасен для всех. Однако, у
+                        перечисленной группы повышен риск тяжелого
+                        течения болезни и им стоит особенно серьезно подойти к профилактическим мероприятиям.</p>
+                      <button class="swiper-next">Продолжить тест</button>
+                    </div>
+
+                    <div class="test__question test__question--1">
+                      <p class="test__title">Грипп опасен только для детей, пожилых людей и беременных женщин.</p>
+                      <div class="uk-flex">
+                        <input class="uk-hidden" type="radio" id="q1-1" name="q1">
+                        <label class="btn uk-margin-medium-right" for="q1-1"
+                          uk-toggle="target: .test1; cls: answer-false answered" onclick="decrementPoints()">Да</label>
+                        <input class="uk-hidden" type="radio" id="q1-2" name="q1">
+                        <label class="btn" for="q1-2" uk-toggle="target: .test1; cls: answer-true answered">Нет</label>
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 <!-- Slide-2 -->
                 <div class="swiper-slide">
-                  <!-- true -->
-                  <div class="test__answer test__answer--2-true">
-                    <p class="test__title">Зимой вероятность заболеть гриппом гораздо выше, чем летом.</p>
-                    <span class="uk-margin-small-bottom">Правильно</span>
-                    <p class="uk-margin-bottom">Для гриппа и ОРВИ характерна осенне-зимне-весенняя-сезонность. Эпидемии
-                      гриппа наблюдаются преимущественно зимой.</p>
-                    <button class="swiper-next">Продолжить тест</button>
-                  </div>
-                  <!-- false -->
-                  <div class="test__answer test__answer--2-false">
-                    <p class="test__title">Зимой вероятность заболеть гриппом гораздо выше, чем летом.</p>
-                    <span class="uk-margin-small-bottom">Не правильно</span>
-                    <p class="uk-margin-bottom">Для гриппа и ОРВИ характерна осенне-зимне-весенняя-сезонность. Эпидемии
-                      гриппа наблюдаются преимущественно зимой.</p>
-                    <button class="swiper-next">Продолжить тест</button>
-                  </div>
-                  <div class="test__question test__question--2">
-                    <p class="test__title">Зимой вероятность заболеть гриппом гораздо выше, чем летом.</p>
-                    <div class="uk-flex">
-                      <input class="uk-hidden" type="radio" id="q2-2" name="q2">
-                      <label class="btn uk-margin-medium-right" for="q2-2"
-                        uk-toggle="target: .test__answer--2-true; cls: active">Да</label>
-                      <input class="uk-hidden" type="radio" id="q2-1" name="q2">
-                      <label class="btn" for="q2-1" uk-toggle="target: .test__answer--2-false; cls: active"
-                        onclick="decrementPoints()">Нет</label>
+                  <div class="test2">
+                    <!-- true -->
+                    <div class="test__answer test__answer--true">
+                      <p class="test__title">Зимой вероятность заболеть гриппом гораздо выше, чем летом.</p>
+                      <span class="uk-margin-small-bottom">Правильно</span>
+                      <p class="uk-margin-bottom">Для гриппа и ОРВИ характерна осенне-зимне-весенняя-сезонность.
+                        Эпидемии
+                        гриппа наблюдаются преимущественно зимой.</p>
+                      <button class="swiper-next">Продолжить тест</button>
+                    </div>
+                    <!-- false -->
+                    <div class="test__answer test__answer--false">
+                      <p class="test__title">Зимой вероятность заболеть гриппом гораздо выше, чем летом.</p>
+                      <span class="uk-margin-small-bottom">Не правильно</span>
+                      <p class="uk-margin-bottom">Для гриппа и ОРВИ характерна осенне-зимне-весенняя-сезонность.
+                        Эпидемии
+                        гриппа наблюдаются преимущественно зимой.</p>
+                      <button class="swiper-next">Продолжить тест</button>
+                    </div>
+                    <div class="test__question test__question--2">
+                      <p class="test__title">Зимой вероятность заболеть гриппом гораздо выше, чем летом.</p>
+                      <div class="uk-flex">
+                        <input class="uk-hidden" type="radio" id="q2-2" name="q2">
+                        <label class="btn uk-margin-medium-right" for="q2-2"
+                          uk-toggle="target: .test2; cls: answer-true answered">Да</label>
+                        <input class="uk-hidden" type="radio" id="q2-1" name="q2">
+                        <label class="btn" for="q2-1" uk-toggle="target: .test2; cls: answer-false answered"
+                          onclick="decrementPoints()">Нет</label>
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 <!-- Slide-3 -->
                 <div class="swiper-slide">
-                  <!-- true -->
-                  <div class="test__answer test__answer--3-true">
-                    <p class="test__title"> - Гриппом можно заразиться через контакт с вещами больного человека.</p>
-                    <span class="uk-margin-small-bottom">Правильно</span>
-                    <p class="uk-margin-bottom">Передача инфекции происходит воздушно-капельным путем при кашле,
-                      чихании, разговоре, а также возможен контактно-бытовой путь передачи - через предметы обихода.</p>
-                    <button class="swiper-next">Продолжить тест</button>
-                  </div>
-                  <!-- false -->
-                  <div class="test__answer test__answer--3-false">
-                    <p class="test__title"> - Гриппом можно заразиться через контакт с вещами больного человека.</p>
-                    <span class="uk-margin-small-bottom">Не правильно</span>
-                    <p class="uk-margin-bottom">Передача инфекции происходит воздушно-капельным путем при кашле,
-                      чихании, разговоре, а также возможен контактно-бытовой путь передачи - через предметы обихода.</p>
-                    <button class="swiper-next">Продолжить тест</button>
-                  </div>
-                  <div class="test__question test__question--3">
-                    <p class="test__title"> - Гриппом можно заразиться через контакт с вещами больного человека.</p>
-                    <div class="uk-flex">
-                      <input class="uk-hidden" type="radio" id="q3-2" name="q3">
-                      <label class="btn uk-margin-medium-right" for="q3-2"
-                        uk-toggle="target: .test__answer--3-true; cls: active">Да</label>
-                      <input class="uk-hidden" type="radio" id="q3-1" name="q3">
-                      <label class="btn" for="q3-1" uk-toggle="target: .test__answer--3-false; cls: active"
-                        onclick="decrementPoints()">Нет</label>
+                  <div class="test3">
+                    <!-- true -->
+                    <div class="test__answer test__answer--true">
+                      <p class="test__title"> - Гриппом можно заразиться через контакт с вещами больного человека.</p>
+                      <span class="uk-margin-small-bottom">Правильно</span>
+                      <p class="uk-margin-bottom">Передача инфекции происходит воздушно-капельным путем при кашле,
+                        чихании, разговоре, а также возможен контактно-бытовой путь передачи - через предметы обихода.
+                      </p>
+                      <button class="swiper-next">Продолжить тест</button>
+                    </div>
+                    <!-- false -->
+                    <div class="test__answer test__answer--false">
+                      <p class="test__title"> - Гриппом можно заразиться через контакт с вещами больного человека.</p>
+                      <span class="uk-margin-small-bottom">Не правильно</span>
+                      <p class="uk-margin-bottom">Передача инфекции происходит воздушно-капельным путем при кашле,
+                        чихании, разговоре, а также возможен контактно-бытовой путь передачи - через предметы обихода.
+                      </p>
+                      <button class="swiper-next">Продолжить тест</button>
+                    </div>
+                    <div class="test__question test__question--3">
+                      <p class="test__title"> - Гриппом можно заразиться через контакт с вещами больного человека.</p>
+                      <div class="uk-flex">
+                        <input class="uk-hidden" type="radio" id="q3-2" name="q3">
+                        <label class="btn uk-margin-medium-right" for="q3-2"
+                          uk-toggle="target: .test3; cls: answer-true answered">Да</label>
+                        <input class="uk-hidden" type="radio" id="q3-1" name="q3">
+                        <label class="btn" for="q3-1" uk-toggle="target: .test3; cls: answer-false answered"
+                          onclick="decrementPoints()">Нет</label>
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 <!-- Slide-4 -->
                 <div class="swiper-slide">
-                  <!-- true -->
-                  <div class="test__answer test__answer--4-true">
-                    <p class="test__title">Передача инфекции происходит воздушно-капельным путем при кашле, чихании,
-                      разговоре, а также возможен контактно-бытовой путь передачи - через предметы обихода.</p>
-                    <span class="uk-margin-small-bottom">Правильно</span>
-                    <p class="uk-margin-bottom">ОРВИ является неопасным заболеванием и не приводит к развитию
-                      осложнений.</p>
-                    <button class="swiper-next">Продолжить тест</button>
-                  </div>
-                  <!-- false -->
-                  <div class="test__answer test__answer--4-false">
-                    <p class="test__title">Передача инфекции происходит воздушно-капельным путем при кашле, чихании,
-                      разговоре, а также возможен контактно-бытовой путь передачи - через предметы обихода.</p>
-                    <span class="uk-margin-small-bottom">Не правильно</span>
-                    <p class="uk-margin-bottom">ОРВИ является неопасным заболеванием и не приводит к развитию
-                      осложнений.</p>
-                    <button class="swiper-next">Продолжить тест</button>
-                  </div>
-                  <div class="test__question test__question--2">
-                    <p class="test__title">Передача инфекции происходит воздушно-капельным путем при кашле, чихании,
-                      разговоре, а также возможен контактно-бытовой путь передачи - через предметы обихода.</p>
-                    <div class="uk-flex">
-                      <input class="uk-hidden" type="radio" id="q4-1" name="q4">
-                      <label class="btn uk-margin-medium-right" for="q4-1"
-                        uk-toggle="target: .test__answer--4-false; cls: active" onclick="decrementPoints()">Да</label>
-                      <input class="uk-hidden" type="radio" id="q4-2" name="q4">
-                      <label class="btn" for="q4-2" uk-toggle="target: .test__answer--4-true; cls: active">Нет</label>
+                  <div class="test4">
+                    <!-- true -->
+                    <div class="test__answer test__answer--true">
+                      <p class="test__title">Передача инфекции происходит воздушно-капельным путем при кашле, чихании,
+                        разговоре, а также возможен контактно-бытовой путь передачи - через предметы обихода.</p>
+                      <span class="uk-margin-small-bottom">Правильно</span>
+                      <p class="uk-margin-bottom">ОРВИ является неопасным заболеванием и не приводит к развитию
+                        осложнений.</p>
+                      <button class="swiper-next">Продолжить тест</button>
+                    </div>
+                    <!-- false -->
+                    <div class="test__answer test__answer--false">
+                      <p class="test__title">Передача инфекции происходит воздушно-капельным путем при кашле, чихании,
+                        разговоре, а также возможен контактно-бытовой путь передачи - через предметы обихода.</p>
+                      <span class="uk-margin-small-bottom">Не правильно</span>
+                      <p class="uk-margin-bottom">ОРВИ является неопасным заболеванием и не приводит к развитию
+                        осложнений.</p>
+                      <button class="swiper-next">Продолжить тест</button>
+                    </div>
+                    <div class="test__question test__question--2">
+                      <p class="test__title">Передача инфекции происходит воздушно-капельным путем при кашле, чихании,
+                        разговоре, а также возможен контактно-бытовой путь передачи - через предметы обихода.</p>
+                      <div class="uk-flex">
+                        <input class="uk-hidden" type="radio" id="q4-1" name="q4">
+                        <label class="btn uk-margin-medium-right" for="q4-1"
+                          uk-toggle="target: .test4; cls: answer-false answered" onclick="decrementPoints()">Да</label>
+                        <input class="uk-hidden" type="radio" id="q4-2" name="q4">
+                        <label class="btn" for="q4-2" uk-toggle="target: .test4; cls: answer-true answered">Нет</label>
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 <!-- Slide-5 -->
                 <div class="swiper-slide">
-                  <!-- true -->
-                  <div class="test__answer test__answer--5-true">
-                    <p class="test__title">Переносить болезнь "на ногах" очень опасно! Это может привести к развитию
-                      осножнений со стороны сердечно-сосудистой системы, ЛОР-органов (синуситы, отиты) и нижних
-                      дыхательных путей (пневмонии, бронхиты).</p>
-                    <span class="uk-margin-small-bottom">Правильно</span>
-                    <p class="uk-margin-bottom">Грипп и ОРВИ имеют разные симптомы и не вызывают проблем при постановке
-                      диагноза.</p>
-                    <button class="swiper-next" uk-toggle='target: .test__swiper; cls: uk-hidden;'
-                      onclick="testResult()">Закончить тест</button>
-                  </div>
-                  <!-- false -->
-                  <div class="test__answer test__answer--5-false">
-                    <p class="test__title">Переносить болезнь "на ногах" очень опасно! Это может привести к развитию
-                      осножнений со стороны сердечно-сосудистой системы, ЛОР-органов (синуситы, отиты) и нижних
-                      дыхательных путей (пневмонии, бронхиты).</p>
-                    <span class="uk-margin-small-bottom">Не правильно</span>
-                    <p class="uk-margin-bottom">Отличить грипп от других ОРВИ по клинической картине достаточно сложно.
-                      Только своевременная лабораторная диагностика позволит установить вид возбудителя, а значит,
-                      назначить адекватное лечение и не допустить осложнений.</p>
-                    <button class="swiper-next" uk-toggle='target: .test__swiper; cls: uk-hidden;'
-                      onclick="testResult()">Закончить тест</button>
-                  </div>
-                  <div class="test__question test__question--2">
-                    <p class="test__title">Переносить болезнь "на ногах" очень опасно! Это может привести к развитию
-                      осножнений со стороны сердечно-сосудистой системы, ЛОР-органов (синуситы, отиты) и нижних
-                      дыхательных путей (пневмонии, бронхиты).</p>
-                    <div class="uk-flex">
-                      <input class="uk-hidden" type="radio" id="q5-1" name="q5">
-                      <label class="btn uk-margin-medium-right" for="q5-1"
-                        uk-toggle="target: .test__answer--5-false; cls: active" onclick="decrementPoints()">Да</label>
-                      <input class="uk-hidden" type="radio" id="q5-2" name="q5">
-                      <label class="btn" for="q5-2" uk-toggle="target: .test__answer--5-true; cls: active">Нет</label>
+                  <div class="test5">
+                    <!-- true -->
+                    <div class="test__answer test__answer--true">
+                      <p class="test__title">Переносить болезнь "на ногах" очень опасно! Это может привести к развитию
+                        осножнений со стороны сердечно-сосудистой системы, ЛОР-органов (синуситы, отиты) и нижних
+                        дыхательных путей (пневмонии, бронхиты).</p>
+                      <span class="uk-margin-small-bottom">Правильно</span>
+                      <p class="uk-margin-bottom">Грипп и ОРВИ имеют разные симптомы и не вызывают проблем при
+                        постановке
+                        диагноза.</p>
+                      <button class="swiper-next" uk-toggle='target: .test__swiper; cls: uk-hidden;'
+                        onclick="testResult()">Закончить тест</button>
+                    </div>
+                    <!-- false -->
+                    <div class="test__answer test__answer--false">
+                      <p class="test__title">Переносить болезнь "на ногах" очень опасно! Это может привести к развитию
+                        осножнений со стороны сердечно-сосудистой системы, ЛОР-органов (синуситы, отиты) и нижних
+                        дыхательных путей (пневмонии, бронхиты).</p>
+                      <span class="uk-margin-small-bottom">Не правильно</span>
+                      <p class="uk-margin-bottom">Отличить грипп от других ОРВИ по клинической картине достаточно
+                        сложно.
+                        Только своевременная лабораторная диагностика позволит установить вид возбудителя, а значит,
+                        назначить адекватное лечение и не допустить осложнений.</p>
+                      <button class="swiper-next" uk-toggle='target: .test__swiper; cls: uk-hidden;'
+                        onclick="testResult()">Закончить тест</button>
+                    </div>
+                    <div class="test__question test__question--2">
+                      <p class="test__title">Переносить болезнь "на ногах" очень опасно! Это может привести к развитию
+                        осножнений со стороны сердечно-сосудистой системы, ЛОР-органов (синуситы, отиты) и нижних
+                        дыхательных путей (пневмонии, бронхиты).</p>
+                      <div class="uk-flex">
+                        <input class="uk-hidden" type="radio" id="q5-1" name="q5">
+                        <label class="btn uk-margin-medium-right" for="q5-1"
+                          uk-toggle="target: .test5; cls: answer-false answered" onclick="decrementPoints()">Да</label>
+                        <input class="uk-hidden" type="radio" id="q5-2" name="q5">
+                        <label class="btn" for="q5-2" uk-toggle="target: .test5; cls: answer-true answered">Нет</label>
+                      </div>
                     </div>
                   </div>
                 </div>
