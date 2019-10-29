@@ -1,10 +1,10 @@
 .test {
 	@include screen(xl) {
-		padding: 40px 0;
+		padding: 40px 0 20px;
 	}
 
 	@include screen(l) {
-		padding: 95px 0;
+		padding: 95px 0 30px;
 	}
 
 	/* swiper */
@@ -18,11 +18,11 @@
 			position: relative;
 
 			@include screen(xl) {
-				min-height: 400px;
+				min-height: 555px;
 			}
 
 			@include screen(l) {
-				min-height: 300px;
+				min-height: 450px;
 			}
 		}
 
@@ -88,7 +88,14 @@
 
 	&__title {
 		margin-bottom: 30px;
-		font: normal 24px/32px Manrope;
+
+		@include screen(xl) {
+			font: normal 20px/28px Manrope;
+		}
+
+		@include screen(l) {
+			font: normal 24px/32px Manrope;
+		}
 	}
 
 	.test__question {
