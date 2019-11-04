@@ -3,14 +3,14 @@
 <body>
   <header class="header">
     <div class="uk-container">
-      <div class="header__top uk-flex uk-flex-between uk-flex-middle@l uk-flex-column@s">
+      <div class="header__top uk-flex uk-flex-between uk-flex-middle@m uk-flex-middle@l">
         <div>
           <a href="#" class="header__logo">
             <img src="img/pic/logo/cmd-logo.svg" width="245" height="42" alt="">
           </a>
         </div>
 
-        <ul class="uk-flex uk-flex-around uk-width-1-2 uk-visible@l">
+        <ul class="header__menu uk-flex uk-flex-around uk-width-1-2">
           <li>
             <a href="#test" uk-scroll>Проверка готовности</a>
           </li>
@@ -31,7 +31,7 @@
       </div>
 
       <div class="header__bottom uk-flex uk-flex-column">
-        <h1><span>А Вы готовы</span><br>к сезону <br>простуды <br>и гриппа?</h1>
+        <h1><span>А Вы готовы</span> <br>к сезону <br>простуды <br>и гриппа?</h1>
         <a class="btn" href="#test" uk-scroll>Проверить</a>
       </div>
     </div>
@@ -40,15 +40,15 @@
 
     <div id="test" class="test">
       <div class="uk-container">
-        <div class="uk-flex uk-flex-column@s uk-child-width-1-2@l">
-          <div class="uk-padding-large-right@l">
+        <div class="test__wrapper uk-flex uk-flex-column@s uk-child-width-1-2">
+          <div class="test__left uk-padding-large-right@l">
             <h2 class="subtitle uk-margin-medium-bottom">Тест на готовность к сезону гриппа и ОРВИ</h2>
             <p>Наступили холода, а значит, повышаются риски заболеть простудой и гриппом. Но даже в осенне-зимний период
               хочется сохранить хорошее настроение, а главное – здоровье! Давайте проверим, готовы ли Вы дать отпор
               опасным вирусам!</p>
           </div>
 
-          <div class="test__swiper uk-padding-large-left@l">
+          <div class="test__right test__swiper uk-padding-large-left@l">
             <p class="test__text">Выберите, согласны Вы или нет с предложенным утверждением.</p>
             <!-- Swiper -->
             <div class="test__container">
@@ -364,8 +364,8 @@
 
     <div id="prevention" class="prevention">
       <div class="uk-container">
-        <div class="uk-flex uk-flex-column@s uk-margin-large-bottom">
-          <div class="uk-margin-large-right@l uk-margin-bottom@s">
+        <div class="prevention__wrapper uk-flex uk-flex-column@s uk-margin-large-bottom">
+          <div class="uk-padding-large-right@l uk-margin-bottom@s">
             <h2 class="subtitle uk-margin-medium-bottom">Профилактика гриппа и ОРВИ</h2>
             <ul class="prevention__list prevention__list--plus">
               <li>Укрепляйте иммунитет, придерживайтесь здорового образа жизни: правильно питайтесь, съедайте не менее 5
@@ -381,12 +381,14 @@
             </ul>
           </div>
 
-          <img class="image image--border-left" src="img/pic/img_01.jpg" width="440" height="440" alt="">
+          <img class="image image--border-left uk-margin-medium-left@l" src="img/pic/img_01.jpg" width="440"
+            height="440" alt="">
         </div>
 
-        <div class="uk-flex uk-flex-column@s">
-          <img class="image image--border-right uk-visible@l" src="img/pic/img_02.jpg" width="440" height="440" alt="">
-          <div class="uk-margin-large-left@l">
+        <div class="prevention__wrapper uk-flex uk-flex-column@s">
+          <img class="image image--border-right prevention__image-visible uk-margin-medium-right@l"
+            src="img/pic/img_02.jpg" width="440" height="440" alt="">
+          <div class="uk-padding-large-left@l">
             <h3 class="uk-margin-bottom">Вакцинопрофилактика</h3>
             <p class="uk-margin-bottom">Это наиболее эффективный метод профилактики, которую рекомендуется проводить с
               середины октября до
@@ -406,7 +408,7 @@
 
     <div id="treatment" class="treatment">
       <div class="uk-container">
-        <div class="uk-flex uk-flex-column@s">
+        <div class="treatment__wrapper uk-flex uk-flex-column@s">
           <div class="uk-margin-large-right@l uk-margin-medium-bottom@s">
             <h2 class="subtitle uk-margin-medium-bottom">Лечение гриппа и ОРВИ</h2>
             <p class="uk-margin-bottom">Многие считают грипп и ОРВИ неопасными заболеваниями и переносят болезнь "на
@@ -425,8 +427,8 @@
 
     <div id="diagnostics" class="diagnostics">
       <div class="uk-container">
-        <div class="uk-flex uk-flex-beetween uk-flex-column@s uk-child-width-1-2@l">
-          <div class="uk-padding-large-right@l">
+        <div class="diagnostics__wrapper uk-flex uk-flex-beetween uk-flex-column@s uk-child-width-1-2">
+          <div class="diagnostics__left uk-padding-large-right@l">
             <h2 class="subtitle uk-margin-medium-bottom@l">Лечение гриппа и ОРВИ</h2>
             <p class="uk-margin-bottom">Симптомы ОРВИ и гриппа очень похожи, и только лабораторная диагностика позволит
               установить вид возбудителя, а значит правильно поставить диагноз и назначить адекватное лечение.</p>
@@ -437,7 +439,7 @@
               гриппа А, включая штаммы «свиного» и «гонконгского» гриппа, гриппа В и возбудителей распространенных ОРВИ.
             </p>
           </div>
-          <div class="uk-padding-large-left@l">
+          <div class="diagnostics__right uk-padding-large-left@l">
             <p class="diagnostics__title uk-margin-bottom">Диагностика вирусных инфекций дыхательных путей (грипп и
               ОРВИ)</p>
             <ul class="uk-margin-medium-bottom">

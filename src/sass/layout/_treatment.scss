@@ -8,4 +8,21 @@
 	@include screen(l) {
 		padding: 95px 0;
 	}
+
+	&__wrapper {
+		@media (min-width: 968px) and (max-width: 1279px) {
+			flex-direction: row !important;
+
+			&>div {
+				width: 50%;
+			}
+
+			img {
+				margin: 0 auto 0 70px;
+				width: 50%;
+				max-width: 440px;
+				max-height: 440px;
+			}
+		}
+	}
 }

@@ -21,11 +21,18 @@
 		background-position: bottom;
 	}
 
+	@media (min-width: 640px) {
+		background: url('../img/pic/header_bg.jpg') no-repeat, #99c1c6;
+		background-size: cover;
+		background-position: bottom;
+	}
+
 	&__top {
 		position: relative;
 		z-index: 1;
 
 		@include screen (xl) {
+			align-items: flex-start;
 			padding: 15px 0;
 			margin-bottom: 30px;
 		}
@@ -33,6 +40,14 @@
 		@include screen (l) {
 			padding: 45px 0 0;
 			margin-bottom: 60px;
+		}
+
+		@media (max-width: 967px) {
+			flex-direction: column;
+		}
+
+		@media (min-width: 968px) {
+			align-items: center;
 		}
 
 		a {
@@ -44,9 +59,11 @@
 				border-color: #ffffff;
 			}
 
+			@media (max-width: 967px) {
+				margin-bottom: 20px;
+			}
 
 			@include screen(xl) {
-				margin-bottom: 20px;
 				text-transform: uppercase;
 				font: normal 16px/normal Manrope;
 			}
@@ -57,7 +74,7 @@
 		}
 
 		img {
-			@include screen(xl) {
+			@media (max-width: 967px) {
 				width: 190px;
 				height: 30px;
 			}
@@ -77,7 +94,7 @@
 		}
 
 		br {
-			@include screen(xl) {
+			@include screen(x) {
 				display: none;
 			}
 		}
@@ -95,18 +112,24 @@
 				font: 700 80px/88px Manrope;
 			}
 
+			@media (min-width: 968px) and (max-width: 1279px) {
+				margin-bottom: 40px;
+				font: 700 80px/88px Manrope;
+			}
+
 			span {
 				color: #003594;
 			}
 		}
 
 		.btn {
-			padding: 19px 15px 20px;
+			max-width: 350px;
+			padding: 18px 15px 16px;
 
 			color: #ffffff;
 			background-color: #003594;
 
-			@include screen(xl) {
+			@include screen(x) {
 				max-width: 210px;
 			}
 
@@ -117,10 +140,33 @@
 			&:hover {
 				background-color: #00a9e0;
 			}
+		}
+	}
 
-			@include screen(xl) {
-				margin: auto;
-			}
+	&__logo {
+		@include screen(xl) {
+			display: block;
+		}
+	}
+
+	&__contact {
+		font: 600 16px/normal Manrope !important;
+	}
+
+	&__menu {
+		@media (max-width: 1023px) {
+			display: none;
+		}
+
+		@media (min-width: 968px) and (max-width: 1079px) {}
+
+		@media (min-width: 1024px) and (max-width: 1279px) {
+			width: 60% !important;
+		}
+
+		a {
+			text-transform: none;
+			font: normal 15px/normal Manrope;
 		}
 	}
 }
