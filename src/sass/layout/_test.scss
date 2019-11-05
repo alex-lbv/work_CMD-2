@@ -106,9 +106,8 @@
 			padding-top: 30px;
 			border-top: 1px solid #cce0e6;
 
-			span {
+			&>span {
 				margin-right: 20px;
-				display: inline-block;
 			}
 
 			li {
@@ -202,8 +201,13 @@
 	&__wrapper {
 		@media (min-width: 968px) and (max-width: 1279px) {
 			flex-direction: row !important;
+
 			.test__left {
-			padding-right: 100px;
+				padding-right: 100px;
+			}
+
+			.test__result-footer {
+				flex-direction: row;
 			}
 		}
 
@@ -215,6 +219,22 @@
 			.test__right {
 				width: 100% !important;
 			}
+
+			#res-1,
+			#res-2,
+			#res-3 {
+				width: 100%;
+			}
+
+			.test__result-footer {
+				flex-direction: column;
+			}
+
+			.test__result-footer > span {
+				margin-bottom: 20px;
+		}
 		}
 	}
+
+
 }
