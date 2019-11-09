@@ -1,80 +1,92 @@
 .prevention {
-	border-top: 1px solid #dddddd;
-	border-bottom: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
 
-	@include screen(xl) {
-		padding: 40px 0;
-	}
+  @include screen(xl) {
+    padding: 40px 0;
+  }
 
-	@include screen(l) {
-		padding: 95px 0;
-	}
+  @include screen(l) {
+    padding: 95px 0;
+  }
 
-	h3 {
-		font: 700 22px/normal Manrope;
-	}
+  h3 {
+    font: 700 22px/normal Manrope;
+  }
 
-	&__list {
-		li {
-			position: relative;
-			padding-left: 25px;
+  &__list {
+    li {
+      position: relative;
+      padding-left: 32px;
 
-			&:not(:last-of-type) {
-				margin-bottom: 30px;
-			}
-		}
+      &:not(:last-of-type) {
+        margin-bottom: 30px;
+      }
+    }
 
-		&--plus {
-			li::before {
-				content: "";
-				position: absolute;
-				left: 0;
-				top: 5px;
-				width: 16px;
-				height: 16px;
-				background: url("../img/pic/ico/check_green.svg") no-repeat;
-			}
-		}
+    &--plus {
+      li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 16px;
+        height: 16px;
+        background: url("../img/pic/ico/check_green.svg") no-repeat;
+      }
+    }
 
-		&--minus {
-			li::before {
-				content: "";
-				position: absolute;
-				left: 0;
-				top: 5px;
-				width: 16px;
-				height: 16px;
-				background: url("../img/pic/ico/check_red.svg") no-repeat;
-			}
-		}
-	}
+    &--minus {
+      li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 16px;
+        height: 16px;
+        background: url("../img/pic/ico/check_red.svg") no-repeat;
+      }
+    }
+  }
 
-	&__wrapper {
-		@media (min-width: 968px) and (max-width: 1279px) {
-			flex-direction: row !important;
+  &__wrapper {
+    @media (min-width: 968px) and (max-width: 1279px) {
+      flex-direction: row !important;
 
-			&>div {
-				width: 50%;
-			}
+      &>div {
+        width: 50%;
+      }
 
-			img {
-				margin: 0 auto 0 70px;
-				width: 50%;
-				max-width: 440px;
-				max-height: 440px;
-			}
+      img {
+        margin: 0 auto 0 70px;
+        width: 50%;
+        max-width: 440px;
+        max-height: 440px;
+      }
 
-			.prevention__image-visible {
-				display: block;
-				margin-right: 70px;
-				margin-left: 0;
-			}
-		}
+      .prevention__image-visible {
+        display: block;
+        margin-right: 70px;
+        margin-left: 0;
+      }
+    }
 
-		@media (max-width: 967px) {
-			.prevention__image-visible {
-				display: none;
-			}
-		}
-	}
+    @media (max-width: 967px) {
+      .prevention__image-visible {
+        display: none;
+      }
+    }
+  }
+
+  .image {
+    @media (max-width: 967px) {
+      margin-top: 46px;
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: 1280px) {
+      width: 440px;
+      height: 440px;
+    }
+  }
 }

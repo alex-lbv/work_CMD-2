@@ -1,22 +1,33 @@
 .geo {
-	@include screen(xl) {
-		padding: 40px 0;
-	}
+    @include screen(xl) {
+        padding: 40px 0;
+    }
 
-	@include screen(l) {
-		padding: 95px 0;
-	}
+    @include screen(l) {
+        padding: 95px 0;
+    }
 
-	.subtitle {
-		margin-bottom: 60px;
-		text-align: center;
-	}
+    .subtitle {
+        text-align: center;
 
-	iframe {
-		width: 100%;
+        @media (max-width: 767px) {
+            margin-bottom: 30px;
+        }
 
-		@include screen(xl) {
-			height: 615px;
+        @media (min-width: 768px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    iframe {
+        width: 100%;
+
+        @include screen(xl) {
+            height: 615px;
 		}
-	}
+		
+		@media (min-width: 768px) {
+			height: 620px;
+		}
+    }
 }

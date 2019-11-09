@@ -1,240 +1,284 @@
 .test {
-	@include screen(xl) {
-		padding: 40px 0 20px;
-	}
+  @include screen(xl) {
+    padding: 60px 0 55px;
+  }
 
-	@include screen(l) {
-		padding: 95px 0 30px;
-	}
+  @include screen(l) {
+    padding: 95px 0 95px;
+  }
 
-	/* swiper */
+  /* swiper */
 
-	&__container {
-		position: relative;
-		overflow: hidden;
-		padding-top: 30px;
+  .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 2px;
+  }
 
-		.swiper-slide {
-			position: relative;
-		}
+  &__container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 30px;
 
-		.swiper-next {
-			padding: 0;
-			font: 400 18px/28px Manrope;
-			color: #00a9e0;
-		}
+    .swiper-slide {
+      position: relative;
+    }
 
-		.swiper-pagination {
-			display: flex;
-			top: 0;
-			left: 0;
-			text-align: left;
-			width: 100%;
-			height: 2px;
+    .swiper-next {
+      padding: 0;
+      border-bottom: 1px solid transparent;
+      font: 400 18px/28px Manrope;
+      color: #00a9e0;
+      transition: border .3s;
 
-			&-bullet {
-				width: calc(100% / 5);
-				height: 2px;
-				border-radius: 0;
-				background-color: #455eaf;
+      &:hover {
+        border-color: #00a9e0;
+      }
+    }
 
-				&:not(:last-of-type) {
-					margin-right: 5px;
-				}
+    .swiper-pagination {
+      display: flex;
+      top: 0;
+      left: 0;
+      text-align: left;
+      width: 100%;
+      height: 2px;
 
-				&-active {
-					background-color: #00a9e0;
-				}
-			}
-		}
-	}
+      &-bullet {
+        opacity: 1;
+        width: calc(100% / 5);
+        height: 2px;
+        border-radius: 0;
+        background: #00a9e0;
 
-	.btn {
-		display: block;
-		padding: 9px 15px 10px;
-		width: 175px;
-		color: #00a9e0;
-		border: 1px solid #00a9e0;
-		background-color: #ffffff;
-		cursor: pointer;
+        &:not(:last-of-type) {
+          margin-right: 2px;
+        }
 
-		&:hover {
-			color: #ffffff;
-			background-color: #00a9e0;
-		}
+        &-active~* {
+          background-color: #cce0e6;
+        }
+      }
+    }
+  }
 
-		@include screen(xl) {
-			margin: auto;
-		}
-	}
+  .btn {
+    display: block;
+    padding: 11px 15px 11px;
+    width: 176px;
+    color: #00a9e0;
+    border: 1px solid #00a9e0;
+    background-color: #ffffff;
+    cursor: pointer;
 
-	input:checked+label {
-		color: #ffffff;
-		background-color: #00a9e0;
-	}
+    &:hover {
+      color: #ffffff;
+      background-color: #18bbf0;
+    }
 
-	&__text {
-		margin-bottom: 30px;
-		font: normal 16px/24px Manrope;
-	}
+    @include screen(xl) {
+      margin: auto;
+    }
+  }
 
-	&__title {
-		margin-bottom: 30px;
+  input:checked+label {
+    color: #ffffff;
+    background-color: #00a9e0;
+  }
 
-		@include screen(xl) {
-			font: normal 20px/28px Manrope;
-		}
+  &__text {
+    margin-bottom: 30px;
+    font: normal 16px/24px Manrope;
 
-		@include screen(l) {
-			font: normal 24px/32px Manrope;
-		}
-	}
+    @media (max-width: 967px) {
+      margin-top: 38px;
+    }
+  }
 
-	.test__question {
-		span {
-			color: #f8485e;
-		}
-	}
+  &__title {
+    margin-bottom: 30px;
 
-	&__result {
-		@include screen(xl) {
-			margin-top: 30px;
-		}
+    @include screen(xl) {
+      font: 600 20px/28px Manrope;
+    }
 
-		&-footer {
-			margin-top: 30px;
-			padding-top: 30px;
-			border-top: 1px solid #cce0e6;
+    @include screen(l) {
+      font: 600 24px/32px Manrope;
+    }
+  }
 
-			&>span {
-				margin-right: 20px;
-			}
+  .test__question {
+    span {
+      color: #f8485e;
+    }
+  }
 
-			li {
-				&:not(:last-of-type) {
-					margin-right: 15px;
-				}
-			}
+  &__result {
+    @include screen(xl) {
+      margin-top: 30px;
+    }
 
-			img {
-				width: 24px;
-				height: 24px;
-			}
-		}
+    &-footer {
+      margin-top: 30px;
+      padding-top: 30px;
+      border-top: 1px solid #cce0e6;
 
-		&-link {
-			color: #00a9e0;
-			border-bottom: 1px solid transparent;
-			transition: border .3s;
+      &>span {
+        font: normal 16px/24px Manrope;
+        color: #777777;
+        margin-right: 20px;
+      }
 
-			&:hover {
-				border-color: #00a9e0;
-			}
-		}
+      li {
+        &:not(:last-of-type) {
+          margin-right: 15px;
+        }
+      }
 
-		&-number {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			text-align: center;
-			width: 115px;
-			height: 115px;
-			color: #ffffff;
-			border-radius: 0 0 40px 0;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
 
-			@include screen(xl) {
-				margin: 0 auto 35px;
-			}
+    &-link {
+      font-weight: 600;
+      color: #00a9e0;
+      border-bottom: 1px solid transparent;
+      transition: border .3s;
 
-			span {
-				display: block;
+      &:hover {
+        border-color: #00a9e0;
+      }
+    }
 
-				&:first-of-type {
-					font: 700 60px/60px Manrope;
-				}
-			}
-		}
+    &-number {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      width: 115px;
+      height: 115px;
+      color: #ffffff;
+      border-radius: 0 0 28px 0;
 
-		&--1 {
-			.test__result-number {
-				background-color: #00b388;
-			}
-		}
+      @include screen(xl) {
+        margin: 0 auto 35px;
+      }
 
-		&--2 {
-			.test__result-number {
-				background-color: #00a9e0;
-			}
-		}
+      span {
+        display: block;
 
-		&--3 {
-			.test__result-number {
-				background-color: #f8485e;
-			}
-		}
-	}
+        &:first-of-type {
+          font: 700 60px/60px Manrope;
+        }
+      }
+    }
 
-	.answered .test__question,
-	.test__answer--false,
-	.test__answer--true {
-		display: none;
-	}
+    &--1 {
+      .test__result-number {
+        background-color: #00b388;
+      }
+    }
 
-	.answer-false .test__answer--false {
-		display: block;
+    &--2 {
+      .test__result-number {
+        background-color: #00a9e0;
+      }
+    }
 
-		span {
-			display: inline-block;
-			color: #f8485e;
-		}
-	}
+    &--3 {
+      .test__result-number {
+        background-color: #f8485e;
+      }
+    }
+  }
 
-	.answer-true .test__answer--true {
-		display: block;
+  .answered .test__question,
+  .test__answer--false,
+  .test__answer--true {
+    display: none;
+  }
 
-		span {
-			display: inline-block;
-			color: #00b388;
-		}
-	}
+  .answer-false .test__answer--false {
+    display: block;
 
-	&__wrapper {
-		@media (min-width: 968px) and (max-width: 1279px) {
-			flex-direction: row !important;
+    span {
+      display: inline-block;
+      color: #f8485e;
+    }
+  }
 
-			.test__left {
-				padding-right: 100px;
-			}
+  .answer-true .test__answer--true {
+    display: block;
 
-			.test__result-footer {
-				flex-direction: row;
-			}
-		}
+    span {
+      display: inline-block;
+      color: #00b388;
+    }
+  }
 
-		@media (max-width: 967px) {
-			.test__left {
-				width: 100% !important;
-			}
+  &__wrapper {
 
-			.test__right {
-				width: 100% !important;
-			}
+    @media (min-width: 968px) and (max-width: 1279px) {
+      flex-direction: row !important;
 
-			#res-1,
-			#res-2,
-			#res-3 {
-				width: 100%;
-			}
+      .test__left {
+        width: 440px !important;
+        margin-right: 44px !important;
+        padding: 0 !important;
+      }
 
-			.test__result-footer {
-				flex-direction: column;
-			}
+      .test__right {
+        width: 440px !important;
+        margin-left: 44px !important;
+        padding: 0 !important;
+      }
 
-			.test__result-footer > span {
-				margin-bottom: 20px;
-		}
-		}
-	}
+      .test__result-footer {
+        flex-direction: row;
+      }
+    }
 
+    @media (max-width: 967px) {
+      .test__left {
+        width: 100% !important;
+      }
 
+      .test__right {
+        width: 100% !important;
+      }
+
+      #res-1,
+      #res-2,
+      #res-3 {
+        width: 100%;
+      }
+
+      .test__result-footer {
+        flex-direction: column;
+      }
+
+      .test__result-footer>span {
+        margin-bottom: 20px;
+      }
+    }
+
+    @media (min-width: 1280px) {
+      .test__left {
+        width: 528px !important;
+        margin-right: 88px !important;
+        padding: 0 !important;
+      }
+
+      .test__right {
+        width: 528px !important;
+        margin-left: 88px !important;
+        padding: 0 !important;
+      }
+    }
+  }
+
+  .ya-share2__link {
+    border-radius: 50%;
+    overflow: hidden;
+  }
 }
