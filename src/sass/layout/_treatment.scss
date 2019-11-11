@@ -1,11 +1,11 @@
 .treatment {
   border-bottom: 1px solid #dddddd;
 
-  @include screen(xl) {
-    padding: 40px 0;
+  @media (max-width: 967px) {
+    padding: 58px 0 56px;
   }
 
-  @include screen(l) {
+  @media (min-width: 968px) {
     padding: 95px 0;
   }
 
@@ -32,5 +32,9 @@
       width: 440px;
       height: 440px;
     }
+  }
+
+  &__texts {
+    flex: 1;
   }
 }

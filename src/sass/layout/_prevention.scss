@@ -2,11 +2,11 @@
   border-top: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;
 
-  @include screen(xl) {
-    padding: 40px 0;
+  @media (max-width: 967px) {
+    padding: 58px 0 55px;
   }
 
-  @include screen(l) {
+  @media (min-width: 968px) {
     padding: 95px 0;
   }
 
@@ -85,8 +85,13 @@
     }
 
     @media (min-width: 1280px) {
+      width: 100%;
       width: 440px;
       height: 440px;
     }
+  }
+
+  &__texts {
+    flex: 1;
   }
 }

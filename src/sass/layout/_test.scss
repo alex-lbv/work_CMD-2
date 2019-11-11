@@ -1,9 +1,9 @@
 .test {
-  @include screen(xl) {
-    padding: 60px 0 55px;
+  @media (max-width: 967px) {
+    padding: 60px 0 56px;
   }
 
-  @include screen(l) {
+  @media (min-width:968px) {
     padding: 95px 0 95px;
   }
 
@@ -72,6 +72,7 @@
     &:hover {
       color: #ffffff;
       background-color: #18bbf0;
+      border-color: #18bbf0;
     }
 
     @include screen(xl) {
@@ -187,6 +188,24 @@
 
     &--3 {
       .test__result-number {
+        background-color: #00a9e0;
+      }
+    }
+
+    &--4 {
+      .test__result-number {
+        background-color: #f8485e;
+      }
+    }
+
+    &--5 {
+      .test__result-number {
+        background-color: #f8485e;
+      }
+    }
+
+    &--6 {
+      .test__result-number {
         background-color: #f8485e;
       }
     }
@@ -249,7 +268,10 @@
 
       #res-1,
       #res-2,
-      #res-3 {
+      #res-3,
+      #res-4,
+      #res-5,
+      #res-6 {
         width: 100%;
       }
 

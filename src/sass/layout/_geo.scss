@@ -1,9 +1,9 @@
 .geo {
-    @include screen(xl) {
-        padding: 40px 0;
+    @media (max-width: 967px) {
+        padding: 59px 0 55px;
     }
 
-    @include screen(l) {
+    @media (min-width: 968px) {
         padding: 95px 0;
     }
 
@@ -24,10 +24,10 @@
 
         @include screen(xl) {
             height: 615px;
-		}
-		
-		@media (min-width: 768px) {
-			height: 620px;
-		}
+        }
+
+        @media (min-width: 768px) {
+            height: 645px;
+        }
     }
 }

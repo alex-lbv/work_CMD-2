@@ -1,41 +1,48 @@
 .footer {
-	padding: 30px 0;
-	background-color: #f2f6fe;
+    background-color: #f2f6fe;
 
-	span {
-		display: inline-block;
-		font: normal 14px/24px Manrope;
-		color: #999999;
+    @media (max-width: 967px) {
+        padding: 40px 0 36px;
+    }
 
-		@include screen(xl) {
-			text-align: center;
-		}
-	}
+    @media (min-width: 968px) {
+        padding: 32px 0;
+    }
 
-	&__socials {
-		@include screen(xl) {
-			margin-bottom: 30px;
-		}
+    span {
+        display: inline-block;
+        font: normal 14px/24px Manrope;
+        color: #999999;
 
-		li {
-			&:not(:last-of-type) {
-				margin-right: 20px;
-			}
-		}
+        @include screen(xl) {
+            text-align: center;
+        }
+    }
 
-		a {
-			width: 40px;
-			height: 40px;
-		}
-	}
+    &__socials {
+        @include screen(xl) {
+            margin-bottom: 30px;
+        }
 
-	&__container {
-		@media (min-width: 968px) and (max-width: 1279px) {
-			flex-direction: row !important;
+        li {
+            &:not(:last-of-type) {
+                margin-right: 20px;
+            }
+        }
 
-			.footer__socials {
-				margin-bottom: 0 !important;
-			}
-		}
-	}
+        a {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    &__container {
+        @media (min-width: 968px) and (max-width: 1279px) {
+            flex-direction: row !important;
+
+            .footer__socials {
+                margin-bottom: 0 !important;
+            }
+        }
+    }
 }

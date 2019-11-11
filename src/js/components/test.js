@@ -19,10 +19,18 @@ function decrementPoints() {
   --testPoints;
 }
 
+
+
 function testResult() {
-  if (testPoints >= 0 && testPoints < 3) {
+  if (testPoints == 0) {
+    $('#res-6').removeClass('uk-hidden');
+  } else if (testPoints == 1) {
+    $('#res-5').removeClass('uk-hidden');
+  } else if (testPoints == 2) {
+    $('#res-4').removeClass('uk-hidden');
+  } else if (testPoints == 3) {
     $('#res-3').removeClass('uk-hidden');
-  } else if (testPoints >= 3 && testPoints <= 4) {
+  } else if (testPoints == 4) {
     $('#res-2').removeClass('uk-hidden');
   } else if (testPoints == 5) {
     $('#res-1').removeClass('uk-hidden');

@@ -1,8 +1,20 @@
 .btn {
-	display: block;
-	width: 100%;
-	text-align: center;
-	border-radius: 40px;
-	font: normal 18px/24px Manrope;
-	transition: background-color .3s , color .1s , border .3s;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-radius: 40px;
+    font: normal 18px/24px Manrope;
+    transition: background-color .3s, color .1s, border .3s;
+
+    &--dark {
+        background-color: #18bbf0 !important;
+		color: #ffffff !important;
+		border-color: #18bbf0 !important;
+
+        &:hover {
+            color: #18bbf0 !important;
+			background: #ffffff !important;
+			
+        }
+    }
 }
